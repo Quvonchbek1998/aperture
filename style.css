@@ -62,6 +62,27 @@ header {
   line-height: 20px;
   letter-spacing: 0.4px;
 }
+#navigation-bar {
+  position: absolute;
+  top: -100px;
+}
+.icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 40px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.icon-burger .line {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+  transition: all 0.3s;
+}
+
 .header-main {
   width: 100%;
   height: auto;
@@ -100,17 +121,24 @@ header {
   font-size: 54px;
   line-height: 59px;
 }
+.main-central-text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #c0c0c0;
+}
 .main-footer {
-  width: 19%;
+  width: 20%;
   display: flex;
   margin-right: 40px;
   justify-content: space-between;
   font-size: 12px;
-  margin-top: 40%;
+  margin-top: 40vh;
 }
 .main-footer img {
   width: auto;
-  height: auto;
+  height: 16px;
 }
 
 #second-sector {
@@ -138,19 +166,24 @@ header {
 .second-containers {
   width: 80%;
   height: auto;
-  display: flex;
+  /* display: flex; */
   position: relative;
 }
+.second-container-top{
+  display: flex;
+  justify-content: space-between;
+}
 .second-main-info {
-  width: auto;
-  height: 600px;
+  width: 98%;
+  height: auto;
   position: relative;
   margin-right: 16px;
   margin-bottom: 16px;
-  padding: 32px;
+  padding: 16px;
+  background-repeat: no-repeat;
 }
 .second-container-top {
-  margin-bottom: 120px;
+  margin-bottom: 16px;
 }
 .second-main-info h3 {
   margin-top: 65%;
@@ -159,6 +192,11 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+}
+.second-container-bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 .second-main-info p {
   font-size: 14px;
@@ -188,7 +226,7 @@ header {
 }
 .third-main {
   width: 100%;
-  height: 600px;
+  height: auto;
   background-image: url(image/third-bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -227,7 +265,6 @@ header {
 .fourth-left {
   width: 80%;
   height: auto;
-  border: 1px solid red;
   margin: 113px 60px;
   padding: 40px 40px;
 }
@@ -264,7 +301,7 @@ header {
 }
 .fifth-main {
   width: 100%;
-  height: 600px;
+  height: auto;
   background-image: url(image/fifth-bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -323,7 +360,7 @@ header {
 }
 .seventh-main {
   width: 100%;
-  height: 600px;
+  height: auto;
   background-image: url(image/seventh-bg.jpg);
   background-size: 100%;
   background-repeat: no-repeat;

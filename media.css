@@ -1,0 +1,132 @@
+@media only screen and (max-width: 1200px) {
+  .main-central-text {
+    width: 80% !important;
+    margin-top: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 1126px) {
+  .main-central-text {
+    width: 90% !important;
+    height: auto;
+    margin-top: 0% !important;
+  }
+
+  .second-containers {
+    display: block !important;
+  }
+  .second-main-info p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar ul {
+    /* display: none; */
+    position: fixed;
+    float: none;
+    flex-direction: column;
+    z-index: 9;
+    left: 0;
+    bottom: 100%;
+    right: 0;
+    top: 10px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  .icon-burger {
+    display: block;
+  }
+  .navbar :checked ~ ul {
+    bottom: 0;
+  }
+  .navbar :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(8px) rotate(225deg);
+  }
+  .navbar :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-225deg);
+  }
+  .fourth-left {
+    width: 100%;
+  }
+  .fouth-right img {
+    width: 100% !important;
+    height: auto;
+    margin-top: 0%;
+  }
+  .main-footer {
+    margin-right: 5%;
+
+  }
+
+  .sponsors {
+    width: 90%;
+    justify-content: space-between;
+  }
+  .main-central-text {
+    margin-bottom: 100px;
+  }
+  .main-central-text span {
+    font-size: 12px;
+  }
+  .main-central-text h2 {
+    font-size: 48px;
+    line-height: 44px;
+  }
+  .main-central-text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .main-footer {
+    width: 30%;
+  }
+  .fourth-left {
+    width: 80%;
+    padding: 0%;
+    margin: 0%;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  .third-footer {
+    width: 40% !important;
+    /* margin-right: 50px; */
+    justify-content: space-between;
+  }
+  .fifth-info {
+    width: 28%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 60px;
+    padding-top: 8%;
+  }
+  .fifth-main{
+      height: auto;
+  }
+  .seventh-main{
+      height: auto;
+  }
+  #eighth-sector{
+      padding-bottom: 80px;
+  }
+  
+
+#eighth-sector h1{
+    width: 90%;
+    font-size: 24px;
+    line-height: 30px;
+}
+  .footer-left{
+      width: 60%;
+  }
+  #footer {
+    width: 100%;
+    height: auto;
+    padding: 90px 5%;
+}
+}

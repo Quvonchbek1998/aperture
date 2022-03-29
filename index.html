@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aperture</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -14,19 +15,25 @@
 
 <body>
     <header>
+        <input type="checkbox" id="navigation-bar" />
         <nav class="navbar container">
             <div class="navbar-brand">
                 <a href="#"> <img src="image/logo.svg" alt="logo"></a>
             </div>
             <div class="navbar-link">
-                <ul>
+                <ul class="links link-provider">
                     <li><a href="">Business areas</a></li>
                     <li><a href="">Featured images</a></li>
                     <li><a href="">Gear cage</a></li>
                     <li><a href="">Contact</a></li>
+                    <button type="button">Get template</button>
                 </ul>
-                <button type="button">Get template</button>
             </div>
+            <label for="navigation-bar" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
         </nav>
         <div class="header-main container">
             <img src="image/header-bg.jpg" class="header-bg" alt="">
@@ -38,7 +45,7 @@
                     vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
                     tristique posuere.</p>
             </div>
-            <div class="main-footer container">
+            <div class="main-footer first-footer container">
                 <img src="image/icons/aim.svg" alt="">
                 <p>1/2000s</p>
                 <img src="image/icons/foto.svg" alt="">
@@ -57,47 +64,37 @@
         </div>
         <div class="second-containers container">
             <div class="second-container-top">
-                <div class="second-main">
-                    <div class="second-main-info"
-                        style="background-image: url(image/second-s/IMAGE1.png); background-repeat: no-repeat; text-align: left;">
-                        <h3>Product Photography</h3>
-                        <p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor
-                            hendrerit.
-                            Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-                        <button type="button"> <span class="btn-bol"></span> Read more</button>
-                    </div>
+                <div class="second-main-info "
+                    style="background-image: url(image/second-s/IMAGE1.png);  background-size: 100%;">
+                    <h3>Product Photography</h3>
+                    <p>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor
+                        hendrerit.
+                        Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                    <button type="button"> <span class="btn-bol"></span> Read more</button>
                 </div>
-                <div class="second-main">
-                    <div class="second-main-info"
-                        style="background-image: url(image/second-s/IMAGE2.png); background-repeat: no-repeat; margin-left: 16px;">
-                        <h3>Architecture Photography</h3>
-                        <p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra,
-                            ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit
-                            amet rhoncus leo imperdiet nec.</p>
-                        <button type="button"> <span class="btn-bol"></span> Read more</button>
-                    </div>
+                <div class="second-main-info"
+                    style="background-image: url(image/second-s/IMAGE2.png); background-size: 100%; ">
+                    <h3>Architecture Photography</h3>
+                    <p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra,
+                        ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit
+                        amet rhoncus leo imperdiet nec.</p>
+                    <button type="button"> <span class="btn-bol"></span> Read more</button>
                 </div>
             </div>
             <div class="second-container-bottom">
-                <div class="second-main">
-                    <div class="second-main-info"
-                        style="background-image: url(image/second-s/IMAGE3.png); background-repeat: no-repeat;">
-                        <h3>Drone Photography</h3>
-                        <p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a
-                            vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur
-                            auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
-                        <button type="button"> <span class="btn-bol"></span> Read more</button>
-                    </div>
+                <div class="second-main-info" style="background-image: url(image/second-s/IMAGE3.png); background-size: 100%; ">
+                    <h3>Drone Photography</h3>
+                    <p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a
+                        vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur
+                        auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                    <button type="button"> <span class="btn-bol"></span> Read more</button>
                 </div>
-                <div class="second-main">
-                    <div class="second-main-info"
-                        style="background-image: url(image/second-s/IMAGE4.png); background-repeat: no-repeat;">
-                        <h3>Wildlife Photography</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et
-                            faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
-                            congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
-                        <button type="button"> <span class="btn-bol"></span> Read more</button>
-                    </div>
+                <div class="second-main-info" style="background-image: url(image/second-s/IMAGE4.png); background-size: 100%; ">
+                    <h3>Wildlife Photography</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et
+                        faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus
+                        congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+                    <button type="button"> <span class="btn-bol"></span> Read more</button>
                 </div>
             </div>
         </div>
@@ -110,7 +107,7 @@
                 <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
                 </p>
             </div>
-            <div class="main-footer container" style="margin-top: 15%;">
+            <div class="main-footer second-footer container" style="margin-top: 15%;">
                 <img src="image/icons/aim.svg" alt="">
                 <p>1/2000s</p>
                 <img src="image/icons/foto.svg" alt="">
@@ -133,7 +130,7 @@
                 <button type="button"> <span class="btn-bol"></span> Check it out </button>
             </div>
             <div class="fouth-right"> <img src="image/fourth-right.png" style="margin-top: 10%;" alt="">
-                <div class="main-footer container" style="margin-top: -5%; width: 50%;">
+                <div class="main-footer third-footer container" style="margin-top: -5%; width: 50%;">
                     <img src="image/icons/aim.svg" alt="">
                     <p>1/2000s</p>
                     <img src="image/icons/foto.svg" alt="">
@@ -154,7 +151,7 @@
                 <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
                 </p>
             </div>
-            <div class="main-footer container" style="margin-top: 15%;">
+            <div class="main-footer fourth-footer container" style="margin-top: 15%;">
                 <img src="image/icons/aim.svg" alt="">
                 <p>1/2000s</p>
                 <img src="image/icons/foto.svg" alt="">
@@ -186,7 +183,7 @@
                 <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.
                 </p>
             </div>
-            <div class="main-footer container" style="margin-top: 15%;">
+            <div class="main-footer fifth-footer container" style="margin-top: 15%;">
                 <img src="image/icons/aim.svg" alt="">
                 <p>1/2000s</p>
                 <img src="image/icons/foto.svg" alt="">
@@ -255,7 +252,7 @@
 
     </footer>
 
-
+<script src="./main.js"></script>
 
 </body>
 
